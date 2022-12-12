@@ -1,0 +1,6 @@
+mongoose.connection
+
+objetobd.on('connected', ()=>{console.log('conexion correcta a MOngoDB')})
+objetobd.on('error', ()=>{console.log('conexion incorrecta a MOngoDB')})
+
+module.exports = mongoose
