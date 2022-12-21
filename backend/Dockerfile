@@ -1,8 +1,8 @@
 FROM node:19-alpine
 WORKDIR /app
-COPY package.json /app
-COPY package-lock.json /app
+COPY package.json ./
+COPY package-lock.json ./
 RUN npm install
-COPY . /app
-EXPOSE 80
+COPY . .
+EXPOSE 5000
 CMD [ "npm", "start" ]
